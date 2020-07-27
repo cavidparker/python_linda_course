@@ -1,11 +1,10 @@
 import re
 
 def main():
-    file = open('regularExpression.txt')
-    for files in file:
-        if re.search('(Len/Neverm)ore',files):
+    fh = open('regularExpression.txt')
+    pattern = re.compile('(Len/Neverm)ore')
+    for line in fh:
+        if re.search(pattern,line):
+            print(line,end='')
 
-            print(files, end ='')
-
-
-if __name__=="__main__":main()        
+if __name__=="__main__":main()            
