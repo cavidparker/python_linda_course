@@ -8,7 +8,7 @@ def main():
             print(files.strip())
 
 
-if __name__=="__main__":main()    
+if __name__=="__main__":main()     
 
 
 
